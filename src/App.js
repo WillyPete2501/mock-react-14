@@ -2,6 +2,7 @@ import {useState, useEffect} from 'react'
 import Posts from './components/Posts'
 import Loading from './components/Loading'
 import Title from './components/Title'
+import SinglePost from './components/SinglePost'
 
 const App = () => {
 
@@ -23,6 +24,7 @@ const App = () => {
         <>
             <Title />
             {posts.length > 0 ? <Posts posts={posts} id="list" /> : <Loading />}
+            <SinglePost />
         </>
     )
 
